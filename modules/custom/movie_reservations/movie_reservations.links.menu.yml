@@ -1,0 +1,8 @@
+movie.admin:
+  title: 'Movie reservations module settings'
+  description: 'example of how to make an admin settings page link'
+  parent: system.admin_config_development
+  route_name: movie.content
+  weight: 100
+
+
