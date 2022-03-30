@@ -8,7 +8,7 @@ class MovieController {
   public function content() {
     return array(
       '#type' => 'markup',
-      '#markup' => t('List of available movies: '),
+      '#markup' => ('List of available movies: '),
     );
   }
 }
