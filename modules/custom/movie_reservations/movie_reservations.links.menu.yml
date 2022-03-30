@@ -4,4 +4,3 @@ movie.admin:
   parent: system.admin_config_development
   route_name: movie.content
   weight: 100
-  
