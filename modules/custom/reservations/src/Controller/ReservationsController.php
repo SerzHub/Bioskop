@@ -13,7 +13,6 @@ class ReservationsController {
     return array(
       '#theme' => 'reservations', 
       '#movies' => $movies,
-      'title' => 'blssbbs',
     );
   }
 }
