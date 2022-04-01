@@ -1,0 +1,8 @@
+uuid: 8dcec1f7-5796-44d0-935c-cab6dc754f59
+langcode: en
+status: true
+dependencies: {  }
+name: Type
+vid: type
+description: 'Type of listed movies'
+weight: 0
