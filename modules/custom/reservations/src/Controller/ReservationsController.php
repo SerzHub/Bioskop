@@ -7,7 +7,7 @@
 namespace Drupal\reservations\Controller;
 
 class ReservationsController {
-  public function content() {
+  public function return_all_movies() {
     $movies = \Drupal::entityTypeManager() -> getStorage('node') -> loadByProperties(['type' => 'Movie']); 
 
     return array(

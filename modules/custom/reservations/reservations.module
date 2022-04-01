@@ -7,24 +7,4 @@
        array('variables' =>
        array('movies' =>array(), 'title' => '')));    
   }
-
-    /*
-       $f =  drupal_get_form('example_module_form', $node);
-        $node->content['data_collection_form'] = array('#value' => $f, '#weight' => 1); 
-
-        movie_theme_hook' => [
-            'render element' => 'children',
-            
-            'template' => 'movie-theme-hook',
-            
-            'path' => $path . '/templates',
-            ]
-
-             return ;
-
-             <h1> List of available movies to watch: </h1>
-
-
-
-
-    */
+  
