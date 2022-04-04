@@ -1,0 +1,8 @@
+reservations:
+  version: 1.0
+  js:
+    js/reservations.js: {}
+  dependencies:
+    - core/jquery
+
+
