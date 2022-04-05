@@ -6,4 +6,6 @@ reservations.content:
   requirements:
     _permission: 'access content'
   methods: [GET]
+  options:
+    no_cache: 'TRUE'
 
