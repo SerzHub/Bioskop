@@ -5,6 +5,7 @@
     return array(
       'reservations' => 
        array('variables' =>
-       array('movies' =>array())));
+       array('movies' =>array(), 'genres' => array())));
   }
+  
   

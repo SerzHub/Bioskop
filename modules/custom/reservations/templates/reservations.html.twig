@@ -1,14 +1,36 @@
-<h1> List of available movies to watch: </h1>
+{{attach_library('reservations/reservations')}}
 
-<ul>
-  {% for movie in movies %}
-    <li>
-      <div>
-        <h3> Name of movie: {{movie.field_title.value | raw}} </h3>
-        <img src="{{file_url(movie.field_image_mov.entity.fileuri)}}" width="300" height="200" />
-        <h3> Description: {{movie.field_description.value | raw}} </h3>
-      </div>
-    </li>        
-  {% endfor %}    
-</ul>
+<head>
+  <script src = "https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+  <h3>Please select movie genre for which you would like to make a reservation: </h3>
+  <select id="genre" name="genre">
+    <option value = ""> Select movie genre: </option>
+    {% for genre in genres %}
+      <option value = "{{genre.tid.value}}"> {{genre.name.value}} </option>      
+    {% endfor %}
+  </select>
+
+    <ul>
+      {% if movies is not empty %}
+        {% for movie in movies %}
+          <li>
+            <div>
+              <h3> Name of movie: {{movie.field_title.value | raw}} </h3>
+              <img src="{{file_url(movie.field_image_mov.entity.fileuri)}}" width="300" height="200" />
+              <h3> Description: {{movie.field_description.value | raw}} </h3>
+            </div>
+          </li>        
+        {% endfor %}    
+      {% else %}
+      {
+        <h3> Sorry, we do not have movies with selected genre yet. </h3>
+      }
+      {% endif %}
+    </ul>
+</body>
+
+
 
