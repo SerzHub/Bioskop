@@ -1,0 +1,49 @@
+uuid: 08ed5256-00a6-4d59-8fcb-ab3d9c24cea9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.movie_section.field_author
+    - field.field.paragraph.movie_section.field_m
+    - field.field.paragraph.movie_section.field_main_actress
+    - field.field.paragraph.movie_section.field_r
+    - paragraphs.paragraphs_type.movie_section
+  module:
+    - datetime
+    - text
+id: paragraph.movie_section.default
+targetEntityType: paragraph
+bundle: movie_section
+mode: default
+content:
+  field_author:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_m:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_main_actress:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_r:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

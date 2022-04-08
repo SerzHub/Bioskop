@@ -1,0 +1,21 @@
+uuid: ddacd49f-59d4-4822-aa65-72cbb28a5491
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_m
+    - paragraphs.paragraphs_type.movie_section
+  module:
+    - text
+id: paragraph.movie_section.field_m
+field_name: field_m
+entity_type: paragraph
+bundle: movie_section
+label: 'Main actor'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,29 @@
+uuid: 68bd6765-0cac-4a9d-a8a5-f7a94842ce0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_section
+    - node.type.movie
+  module:
+    - entity_reference_revisions
+id: node.movie.field_section
+field_name: field_section
+entity_type: node
+bundle: movie
+label: Section
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+    negate: 0
+    target_bundles_drag_drop:
+      movie_section:
+        weight: 2
+        enabled: false
+field_type: entity_reference_revisions

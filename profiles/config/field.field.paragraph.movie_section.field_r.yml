@@ -1,0 +1,21 @@
+uuid: 02edd2d8-ed65-42f9-9b3e-16af44b4f1be
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_r
+    - paragraphs.paragraphs_type.movie_section
+  module:
+    - datetime
+id: paragraph.movie_section.field_r
+field_name: field_r
+entity_type: paragraph
+bundle: movie_section
+label: 'Release date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -6,6 +6,4 @@
       'reservations' => 
        array('variables' =>
        array('movies' =>array(), 'genres' => array())));
-  }
-  
-  
+  } 
