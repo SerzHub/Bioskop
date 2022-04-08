@@ -6,6 +6,7 @@
 
 namespace Drupal\reservations\Controller;
 use \Drupal\node\Entity\Node;
+use Drupal\paragraphs\Entity\Paragraph;
 
 class ReservationsController {
   public function return_all_movies() {
@@ -21,8 +22,6 @@ class ReservationsController {
     }
 
     $movies = Node::loadMultiple($query->execute());
-    $a = 1;
-
 
     return array(
       '#theme' => 'reservations', 

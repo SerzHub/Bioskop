@@ -1,0 +1,20 @@
+uuid: da3a3997-edae-40fc-b3b5-bbeed7b7dc5f
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_main_actress
+field_name: field_main_actress
+entity_type: paragraph
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
