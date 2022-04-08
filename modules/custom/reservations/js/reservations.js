@@ -17,8 +17,22 @@ function SelectingMovie() {
             $(this).toggleClass('itemChange')
             $(".button", this).show();
         } else {
-            $(".item").removeClass("itemChange")
+            $(".item").removeClass('itemChange')
             $(".button", this).hide();
+        }
+    })
+}
+
+function validateInput() {
+    $("#formName").submit(function () {
+        const name = $('#customerName').val();
+        const name_without_numbers = /^[A-Z][a-z]+$/;
+
+        if (name_without_numbers.test(name)) {
+            $(".button1").css('background-color', 'green');
+        }
+        else {
+            $(".button1").css('background-color', 'red');
         }
     })
 }
@@ -26,6 +40,8 @@ function SelectingMovie() {
 choosingGenre();
 
 SelectingMovie();
+
+validateInput();
 
 
 
