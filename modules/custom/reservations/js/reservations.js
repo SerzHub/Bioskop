@@ -11,7 +11,21 @@ function choosingGenre() {
     });
 }
 
+function SelectingMovie() {
+    $(".item").click(function () {
+        if (!$(this).is('.itemChange')) {
+            $(this).toggleClass('itemChange')
+            $(".button", this).show();
+        } else {
+            $(".item").removeClass("itemChange")
+            $(".button", this).hide();
+        }
+    })
+}
+
 choosingGenre();
+
+SelectingMovie();
 
 
 
