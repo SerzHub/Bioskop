@@ -20,7 +20,7 @@
             <div class="item">
               <h3 id="movie-title-{{movie.nid.value}}"> Name of movie: {{movie.field_title.value | raw}} </h3>
               <img id="movie-image-{{movie.nid.value}}" src="{{file_url(movie.field_image_mov.entity.fileuri)}}" width="300" height="200" />
-              <h3 id="movie-desc-{{movie.nid.value}}"> Description: {{movie.field_description.value | raw}} </h3>
+              <h3 id="movie-description-{{movie.nid.value}}"> Description: {{movie.field_description.value | raw}} </h3>
               <br><button type="button" class="button" style="background-color: green" id="reservations-button-{{movie.nid.value}}"> Reserve this movie </button>
             </div>
           </li>        
