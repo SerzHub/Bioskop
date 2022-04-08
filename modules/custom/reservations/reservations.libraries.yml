@@ -2,6 +2,9 @@ reservations:
   version: 1.0
   js:
     js/reservations.js: {}
+  css:
+    theme:
+      css/reservations.css: {}
   dependencies:
     - core/jquery
 

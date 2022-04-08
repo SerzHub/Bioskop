@@ -1,0 +1,16 @@
+.list_item:hover {
+    background-color: #ee16a6;
+    color: rgb(255, 239, 22);
+}
+
+.itemChange {
+    background-color: #7700ff;
+    color: rgb(255, 0, 0);
+}
+
+.button {
+    border: none;
+    background-color: rgb(8, 168, 34);
+    color: rgb(22, 50, 173);
+    font-size: 16px;
+}
