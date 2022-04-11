@@ -24,6 +24,8 @@ function SelectingMovie() {
 }
 
 function validateInput() {
+
+
     $("#formName").submit(function () {
         const name = $('#customerName').val();
         const name_without_numbers = /^[A-Z][a-z]+$/;
@@ -36,7 +38,7 @@ function validateInput() {
             $(".item").removeClass('button1')
             $(".button1", this).hide();
         }
-
+        return false;
     })
 }
 
@@ -45,6 +47,3 @@ choosingGenre();
 SelectingMovie();
 
 validateInput();
-
-
-
