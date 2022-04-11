@@ -28,12 +28,15 @@ function validateInput() {
         const name = $('#customerName').val();
         const name_without_numbers = /^[A-Z][a-z]+$/;
 
-        if (name_without_numbers.test(name)) {
-            $(".button1").css('background-color', 'green');
+        if (!name_without_numbers.test(name)) {
+
+            $(this).toggleClass('button1')
+            $(".button1", this).show();
+        } else {
+            $(".item").removeClass('button1')
+            $(".button1", this).hide();
         }
-        else {
-            $(".button1").css('background-color', 'red');
-        }
+
     })
 }
 
