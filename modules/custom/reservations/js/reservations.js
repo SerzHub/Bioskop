@@ -13,11 +13,11 @@ function choosingGenre() {
 
 function SelectingMovie() {
     $(".item").click(function () {
-        if (!$(this).is('.itemChange')) {
-            $(this).toggleClass('itemChange')
+        if (!$(this).is('.selectedMovie')) {
+            $(this).toggleClass('selectedMovie')
             $(".button", this).show();
         } else {
-            $(".item").removeClass('itemChange')
+            $(".item").removeClass('selectedMovie')
             $(".button", this).hide();
         }
     })
